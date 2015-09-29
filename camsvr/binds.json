@@ -1,0 +1,10 @@
+{
+  "camsvr/cfg/motion.conf":"/etc/motion/motion.conf",
+  "camsvr/cfg/1.conf":"/etc/motion/1.conf",
+  "camsvr/cfg/2.conf":"/etc/motion/2.conf",
+  "camsvr/cfg/3.conf":"/etc/motion/3.conf",
+  "camsvr/cfg/4.conf":"/etc/motion/4.conf",
+  "camsvr/log":"/var/log",
+  "camsvr/srv/scripts":"/srv/scripts",
+  "/srv/motion":"/var/motion"
+}

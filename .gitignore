@@ -1,0 +1,15 @@
+*vxlog*
+*.pem
+id.rsa
+id_rsa
+*.pub
+*.log
+*.jar
+*.class
+*.bak
+*.tmp
+*.temp
+*.back
+*/log/*
+*.err
+*script/cmds/*
