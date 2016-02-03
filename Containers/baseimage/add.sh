@@ -1,8 +1,6 @@
 #!/bin/bash
 VARS=(USRID CONFIGDIR TAG_VER NODE_VER GHUSR GHTOKEN )
 
-VPATH="$CONFIGDIR/../util/vault"
-APPID=$(cat $VPATH/app.id)
 BAIL() {
   echo "ERROR " + $1l
   exit -1
