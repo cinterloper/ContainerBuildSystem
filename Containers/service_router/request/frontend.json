@@ -1,0 +1,11 @@
+{
+    "name" : "test_fe_1",
+    "bindPort" : 80,
+    "bindIp" : "0.0.0.0",
+    "defaultBackend" : "testbe1",
+    "mode" : "http",
+    "options" : {
+        "httpClose" :  true
+    }
+}
+

@@ -1,0 +1,4 @@
+{
+ "tag":"service_router",
+ "extra":"--dns=172.17.0.1"
+}

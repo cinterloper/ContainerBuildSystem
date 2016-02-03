@@ -1,0 +1,35 @@
+{
+  "name": "test_route_2",                               
+  "port": 80,                                         
+  "protocol": "http",
+  "filters": [                                          
+    {
+      "name": "uses_internet_explorer",
+      "condition": "hdr_sub(user-agent) MSIE",
+      "destination": "service_b"
+    }
+  ],
+  "httpQuota": {
+    "sampleWindow": "1s",
+    "rate": 10000,
+    "expiryTime": "10s"
+  },
+  "tcpQuota": {
+    "sampleWindow": "3s",
+    "rate": 10000,
+    "expiryTime": "10s"
+  },
+  "services": [                                           
+    {
+      "name": "opentsdb",                                
+      "weight": 30,                                   
+      "servers": [
+        {
+          "name": "opentsdb.55f73f0d-6087-4964-a70e",      
+          "host": "opentsdb-docker.docker",                      
+          "port": 4242
+        }
+      ]
+    }
+  ]
+} 
