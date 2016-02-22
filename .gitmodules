@@ -1,0 +1,3 @@
+[submodule "util/bashutils"]
+	path = util/bashutils
+	url = git@github.com:cinterloper/bashutils.git
