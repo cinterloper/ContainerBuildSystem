@@ -1,9 +1,8 @@
 #!/bin/bash
 source .util/logger.sh
-source .cfg-enabled/*
 COMPONENT=$1
 #CACHE="--no-cache"
-cd $COMPONENT
+cd Containers/$CTRNS/$COMPONENT
 EXTRA=$2 # support passing KV(s) to add.sh implementations, to indicate things like client, and include key material specific to them
 
 if [[ -f add.sh ]]; then
@@ -12,7 +11,7 @@ if [[ -f add.sh ]]; then
     exit -1
   fi
 fi 
-docker $DKRGS build $CACHE -t $BASEREPO/$(cat meta.json | jq -r .tag ):$ELVR .
+docker $DKRGS build $CACHE -t $BASEREPO/$(cat meta.json | jq -r .tag ):latest .
 STAT=$?
 if [[ -f id.rsa ]]; then
   rm id.rsa

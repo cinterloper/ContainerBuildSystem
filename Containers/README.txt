@@ -1,6 +1,6 @@
+each folder is a container build namespace
 
 pre-build material is collected (and cleaned up) through $CONTAINER/add.sh
-
 
 volume binds are configured in binds.json
 ports are configured in ports.json

@@ -2,7 +2,7 @@
 #a hidden folder (.) should contain the set of docker definitions derived from 
 #the operating system it is named for. 
 #example : ./switchbase.sh EL7
-for ctr in ./baseimage ./connect ./baseimage_remotectl ./connect_canary ./connect_rpm_build
+for ctr in $(ls Containers)
 do
    rm $ctr/Dockerfile
    rm $ctr/meta.json

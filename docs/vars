@@ -1,0 +1,3 @@
+Name, Type, Example, Notes
+CTRNS,path,"base",this is the container namespace. it refers to a directory of related containers 
+CONFIGDIR,path,$(pwd),this is the base path of the config directory
