@@ -1,11 +1,6 @@
 #!/usr/bin/env bats
 source util/logger.sh
 export LOGDIR=/tmp
-echo $CONFIGDIR > config/confdir
-
-@test "CONFIGDIR is set ($CONFIGDIR)" {
-  [ "$CONFIGDIR" != "" ]
-}
 @test "dialog installed" {
   dialog --help
   result=$?
