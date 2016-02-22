@@ -8,7 +8,7 @@ VARS=( DKRGS SKUM )
 }
 @test "build baseimage" {
   export CTRNS='base'
-  bash util/build.sh webhook_responder
+  bash util/build.sh baseimage
   result=$?
   [ "$result" -eq 0 ]
 }

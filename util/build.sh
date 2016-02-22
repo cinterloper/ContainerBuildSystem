@@ -1,5 +1,6 @@
 #!/bin/bash
-source .util/logger.sh
+source util/logger.sh
+source config/baserepo
 COMPONENT=$1
 #CACHE="--no-cache"
 cd Containers/$CTRNS/$COMPONENT
