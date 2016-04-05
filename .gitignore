@@ -24,3 +24,6 @@ ripple-dev-base.box
 config/u-*
 config/dkrgs.sh
 connect/ripple-connect
+Build/*
+!Build/base
+!Build/README.txt
