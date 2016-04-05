@@ -1,1 +1,1 @@
-test/bats/bin/bats
+util/bats/bin/bats

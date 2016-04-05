@@ -1,11 +1,6 @@
 #!/usr/bin/env bats
 source util/logger.sh
 export LOGDIR=/tmp
-@test "dialog installed" {
-  dialog --help
-  result=$?
-  [ "$result" -eq 0 ]
-}
 
 @test "jq installed or fetchable?" {
   { 
